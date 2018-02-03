@@ -1,0 +1,19 @@
+
+.App {
+  
+  &--header {
+    background-color: #222;
+    color: white;
+    padding: 1px 32px;
+    
+    .button {
+      margin: 11px 16px;
+    }
+  }
+
+  &--title {
+    font-size: 1.5em;
+    float: left;
+  }
+
+}

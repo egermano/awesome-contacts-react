@@ -1,0 +1,23 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bulma": "^0.6.2",
+    "moment-timezone": "^0.5.14",
+    "node-sass": "^4.7.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.0"
+  },
+  "scripts": {
+    "sass-watch": "node-sass styles/ -o src/ --source-comments -r -w",
+    "start": "concurrently \"react-scripts start\" \"yarn run sass-watch\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
+}

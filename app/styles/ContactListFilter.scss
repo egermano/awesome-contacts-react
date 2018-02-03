@@ -1,0 +1,27 @@
+@import "helpers";
+
+.contacts--filter {
+    background: #ececec;
+    padding: 4px 32px;
+    
+    &-list {
+        @extend .clearfix;
+        list-style: none;
+        margin: 0;
+        padding: 8px 0;
+
+        > li {
+            display: block;
+            float: left;
+
+            &:not(:last-child) {
+                margin-right: 16px;
+            }
+        }
+    }
+
+    &-title {
+        font-weight: 700;
+        padding: 8px;
+    }
+}

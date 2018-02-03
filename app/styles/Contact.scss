@@ -1,0 +1,70 @@
+.contact {
+    flex-basis: 100%;
+    height: 430px;
+    margin-bottom: 16px;
+    position: relative;
+
+    @media (min-width: 561px) { 
+        flex-basis: 50%;
+    }
+
+    @media (min-width: 901px) { 
+        flex-basis: 33.33%;
+    }
+
+    @media (min-width: 1200px) { 
+        flex-basis: 25%;
+    }
+    
+    &--container {
+        background: #FFF;
+        border-radius: 2px;
+        margin: 0 8px;
+        min-height: 100%;
+        padding: 16px;
+    }
+
+    &--avatar {
+        border-radius: 50%;
+        background-color: #f9f9f9;
+        display: block;
+        height: 200px;
+        margin: 0 auto 16px;
+        width: 200px;
+    }
+
+    &--meta {
+        bottom: 0;
+        position: absolute;
+        transition: all .2s;
+    }
+    
+    &--actions {
+        bottom: 0;
+        height: 200px;
+        left: 16px;
+        opacity: 0;
+        padding: 30px 0;
+        position: absolute;
+        right: 16px;
+        transition: all .2s;
+
+        > p {
+            display: block;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+        }
+    }
+
+    &:hover {
+        .contact--meta {
+            opacity: 0;
+        }
+
+        .contact--actions {
+            opacity: 1;
+        }
+    }
+}
